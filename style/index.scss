@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
+    -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
+    -webkit-user-select:none; 
+}
+
+
+
+$heading-font:'Montserrat', sans-serif;
+$content-font:'Roboto', sans-serif;
+$heading-color:rgb(3, 124, 64);
+$content-color:rgb(97, 97, 97);
+$background-contrast:rgb(224, 224, 224);
+$nav-back:rgb(231, 231, 231);
+$nav-hover-color:rgb(90, 90, 90);
+
+
+
+html{
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color:transparent;
+}
+
+
+
+
+
+
+
+.landing-container{
+    min-height: 100vh;
+    padding:50px 10px 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    @media screen and (max-width:920px)
+    {
+        display:flex;
+        justify-content: center;
+    }
+    .image{
+        @media screen and (max-width:920px)
+        {
+            padding:50px 0px 0px 0px;
+            justify-content:bottom;
+        }
+        @media screen and (max-width:460px)
+        {
+               padding: 0px 0px 0px 0px;
+        }
+        flex:0.75;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        img{
+           width:450px;
+           @media screen and (max-width:580px)
+           {
+              width:350px;
+           }
+           @media screen and (max-width:460px)
+            {
+               width:300px;
+            }
+            @media screen and (max-width:400px)
+            {
+               width:250px;
+            }
+        }
+    }
+
+    .text{
+        flex: 1.25;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (max-width:580px)
+        {
+           justify-content:start;
+        }
+        .text-content{
+
+            padding:10px 100px;
+            @media screen and (max-width:580px)
+            {
+               padding: 10px 50px;
+            }
+            @media screen and (max-width:460px)
+            {
+               padding: 10px 20px;
+            }
+            @media screen and (max-width:400px)
+            {
+               padding: 10px 10px;
+            }
+            h1{
+                font-family: $heading-font;
+                color:$heading-color;
+                font-size: 48px;
+                @media screen and (max-width:460px)
+                {
+                    font-size: 36px;
+                }
+            }
+            p{
+                font-family: $content-font;
+                color:$content-color;
+                font-size: 24px;
+                padding-bottom: 20px;
+                @media screen and (max-width:460px)
+                {
+                    font-size: 18px;
+                }
+            }
+
+            a{
+                text-decoration: none;
+                color:$content-color;
+                background-color: whitesmoke;
+                padding:10px 20px;
+                border-radius: 50px;
+                font-family: $content-font;
+                border:0.5px solid rgb(189, 189, 189);
+                transition: background-color 0.2s;
+                &:hover{
+                    background-color: $nav-back;
+                    color:$heading-color;
+                    transition: background-color 0.4s;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.project-container{
+    min-height: 100vh;
+    padding:100px 50px 50px 50px;
+    @media screen and (max-width:560px){
+        padding: 100px 20px 50px 20px;
+    }
+    h1{
+        font-size: 48px;
+        font-family: $heading-font;
+        color: $heading-color;
+        @media screen and (max-width:460px) {
+            font-size: 36px;
+        }
+    }
+
+    p{
+        font-family: $content-font;
+        color: $content-color;
+        font-size: 24px;
+        padding-bottom: 50px;
+        @media screen and (max-width:460px) {
+            font-size: 18px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .project-box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .project{
+            @media screen and (max-width:500px) {
+                max-width: 300px;
+                margin:20px 0px;
+            }
+            max-width: 330px;
+            padding:20px;
+            border: 1px solid rgb(189, 189, 189);
+            border-radius: 10px;
+            margin:20px 20px;
+            background-color:rgb(250, 250, 250);
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            a{
+                display: flex;
+                flex-direction: column;
+                justify-content:space-between;
+                text-decoration: none;
+
+                .desc{
+                    p{
+                        padding:0px 10px;
+                        font-family: $content-font;
+                        color: $heading-color;
+                        font-size: 18px;
+                        text-align:center;
+                        @media screen and (max-width:500px) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            transition: box-shadow 0.2s;
+            &:hover{
+                -webkit-box-shadow: 3px 3px 47px -10px rgba(0,0,0,0.57);
+                -moz-box-shadow: 3px 3px 47px -10px rgba(0,0,0,0.57);
+                box-shadow: 3px 3px 47px -10px rgba(0,0,0,0.57);
+                transition: box-shadow 0.4s;
+            }
+        }
+    }
+}
+
+
+
+.about-container{
+    padding:100px 50px;
+    @media screen and (max-width:560px){
+        padding: 100px 20px 50px 20px;
+    }
+    h1{
+        font-size: 48px;
+        font-family: $heading-font;
+        color:$heading-color;
+        @media screen and (max-width:460px) {
+            font-size: 36px;
+        }
+    }
+    p{
+        font-family: $content-font;
+        color:$content-color;
+        font-size: 22px;
+        padding-bottom: 20px;
+        width:70%;
+        @media screen and (max-width:850px) {
+            font-size: 20px;
+            width:100%;
+        }
+        @media screen and (max-width:460px) {
+            font-size: 18px;
+            padding-bottom: 15px;
+            text-align: justify;
+        }
+    }
+    
+}
+
+
+
+
+
+.contact-container{
+    padding:100px 50px;
+    @media screen and (max-width:560px){
+        padding: 100px 20px 20px 20px;
+    }
+    background-color:rgb(245, 245, 245);
+    border-top: 1px solid rgb(219, 219, 219);
+    h1{
+        font-size: 48px;
+        font-family: $heading-font;
+        color:$heading-color;
+        @media screen and (max-width:460px) {
+            font-size: 36px;
+        }
+    }
+    p{
+        font-family: $content-font;
+        color:$content-color;
+        font-size: 22px;
+        padding-bottom: 20px;
+        width:70%;
+        @media screen and (max-width:850px) {
+            font-size: 20px;
+            width:100%;
+        }
+        @media screen and (max-width:460px) {
+            font-size: 18px;
+            padding-bottom: 15px;
+            text-align: justify;
+        }
+    }
+
+    .social{
+        padding-bottom: 10px;
+        
+        a{
+           i{
+               padding:15px;
+               font-size: 42px;
+               color:$heading-color;
+               &:hover{
+                   color:rgb(97, 97, 97);
+                   background-color: rgba(0,0,0,0.05);
+                   border-radius: 50%;
+               }
+           }
+        }
+    }
+
+    .contact{
+        font-family: $content-font;
+        color:$content-color;
+        h3{
+            font-weight: lighter;
+        }
+    }
+}
+
+.footer{
+    padding:20px;
+    background-color:rgb(245, 245, 245);
+    text-align: center;
+    p{
+        i{
+            color:red;
+        }
+        span{
+            font-family: $heading-font;
+            a{
+                text-decoration: none;
+                color:$heading-color;
+            }
+        }
+        font-family: $content-font;
+        color:$content-color;
+        font-size: 24px;
+        padding-bottom: 20px;
+        @media screen and (max-width:460px) {
+            font-size: 20px;
+            font-size: 20px;
+        }
+    }
+}
