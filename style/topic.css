@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-touch-callout: none;
+  /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;
+  /* prevent webkit from resizing text to fit */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* prevent tap highlight color / shadow */
+  -webkit-user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.heading {
+  padding: 150px 50px;
+}
+@media screen and (max-width: 620px) {
+  .heading {
+    padding: 100px 20px;
+  }
+}
+.heading h2 {
+  color: #037c40;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  width: 60%;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 920px) {
+  .heading h2 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .heading h2 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .heading h2 {
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+  }
+}
+.heading .member-container {
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 500px) {
+  .heading .member-container {
+    justify-content: center;
+  }
+}
+.heading .member-container .member {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.heading .member-container .member .name {
+  color: #037c40;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.heading .member-container .member .details {
+  color: #616161;
+  font-family: "Roboto", sans-serif;
+  padding: 5px 0px;
+  border-top: 1px dotted #037c40;
+  border-bottom: 1px dotted #037c40;
+}
+.heading .member-container .member .social {
+  padding: 5px 0px 0px 0px;
+}
+.heading .member-container .member .social a {
+  color: #037c40;
+  padding: 0px 2px;
+  font-size: 20px;
+}
+
+.desc {
+  padding: 20px 50px;
+}
+@media screen and (max-width: 620px) {
+  .desc {
+    padding: 10px 20px;
+  }
+}
+.desc h1 {
+  color: #037c40;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+.desc p {
+  text-align: justify;
+  width: 60%;
+  font-family: "Roboto", sans-serif;
+  color: #616161;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  line-height: 20px;
+  font-size: 18px;
+}
+@media screen and (max-width: 950px) {
+  .desc p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .desc p {
+    width: 100%;
+  }
+}
+
+.solution {
+  padding: 100px 50px 50px 50px;
+}
+@media screen and (max-width: 620px) {
+  .solution {
+    padding: 100px 20px 20px 20px;
+  }
+}
+.solution h1 {
+  color: #037c40;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+.solution p {
+  text-align: justify;
+  width: 60%;
+  font-family: "Roboto", sans-serif;
+  color: #616161;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  line-height: 20px;
+  font-size: 18px;
+}
+@media screen and (max-width: 950px) {
+  .solution p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .solution p {
+    width: 100%;
+  }
+}
+
+.progress {
+  padding: 100px 50px 50px 50px;
+}
+@media screen and (max-width: 620px) {
+  .progress {
+    padding: 100px 20px 20px 20px;
+  }
+}
+.progress h1 {
+  color: #037c40;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+}
+.progress p {
+  width: 60%;
+  font-family: "Montserrat", sans-serif;
+  color: #616161;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 950px) {
+  .progress p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .progress p {
+    width: 100%;
+  }
+}
+.progress .list {
+  width: 60%;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  color: #616161;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  line-height: 20px;
+}
+@media screen and (max-width: 950px) {
+  .progress .list {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .progress .list {
+    width: 100%;
+  }
+}
+.progress .list ul {
+  list-style: none;
+}
+.progress .list ul li {
+  padding: 5px 10px;
+  margin: 10px 0px;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  background-color: #f4fcf1;
+}
+.progress .list ul .con {
+  background-color: #fdeeee;
+}
+
+.reference {
+  padding: 100px 50px 50px 50px;
+}
+@media screen and (max-width: 620px) {
+  .reference {
+    padding: 100px 20px 20px 20px;
+  }
+}
+.reference h1 {
+  color: #037c40;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+}
+.reference p {
+  width: 60%;
+  font-family: "Montserrat", sans-serif;
+  color: #616161;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 950px) {
+  .reference p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .reference p {
+    width: 100%;
+  }
+}
+.reference .reference-box {
+  padding: 0px 20px;
+}
+.reference .reference-box ol li {
+  margin: 5px 0px;
+}
+.reference .reference-box ol li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding: 5px;
+}
+.reference .reference-box ol li a:hover {
+  text-decoration: underline;
+}
+
+.media {
+  padding: 100px 50px 50px 50px;
+}
+@media screen and (max-width: 620px) {
+  .media {
+    padding: 100px 20px 20px 20px;
+  }
+}
+.media h1 {
+  color: #037c40;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+}
+.media p {
+  width: 60%;
+  font-family: "Montserrat", sans-serif;
+  color: #616161;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 950px) {
+  .media p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .media p {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=topic.css.map */

@@ -38,7 +38,7 @@ html {
 }
 @media screen and (max-width: 920px) {
   .landing-container .image {
-    padding: 50px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     justify-content: bottom;
   }
 }
@@ -171,7 +171,7 @@ html {
   max-width: 330px;
   padding: 20px;
   border: 1px solid #bdbdbd;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 20px 20px;
   background-color: #fafafa;
   display: flex;
